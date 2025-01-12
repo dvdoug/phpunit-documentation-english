@@ -257,6 +257,20 @@ The ``CoversClassesThatImplementInterface(string $interfaceName)`` attribute can
 implementations of the given interface.
 
 
+``CoversClassesThatExtendClass``
+--------------------------------
+
++-------------+--------------+------------+
+| Class Level | Method Level | Repeatable |
++=============+==============+============+
+| yes         | no           | yes        |
++-------------+--------------+------------+
+
+The ``CoversClassesThatExtendClass(string $className)`` attribute can be used to
+:ref:`specify <code-coverage.targeting-units-of-code>` that a test intends to cover
+child classes of the given parent class.
+
+
 .. _appendixes.attributes.CoversMethod:
 
 ``CoversMethod``
@@ -331,6 +345,22 @@ in the context of :ref:`preventing unintentionally covered code <risky-tests.uni
 
 The ``UsesClassesThatImplementInterface(string $interfaceName)`` attribute can be used to :ref:`specify <code-coverage.targeting-units-of-code>`
 that a test allows the execution of code in classes that implement the given interface, but does not intend to cover it. This is relevant
+in the context of :ref:`preventing unintentionally covered code <risky-tests.unintentionally-covered-code>`.
+
+
+.. _appendixes.attributes.UsesClassesThatExtendClass:
+
+``UsesClassesThatExtendClass``
+------------------------------
+
++-------------+--------------+------------+
+| Class Level | Method Level | Repeatable |
++=============+==============+============+
+| yes         | no           | yes        |
++-------------+--------------+------------+
+
+The ``UsesClassesThatExtendClass(string $className)`` attribute can be used to :ref:`specify <code-coverage.targeting-units-of-code>`
+that a test allows the execution of code in child classes that extend the given parent class, but does not intend to cover it. This is relevant
 in the context of :ref:`preventing unintentionally covered code <risky-tests.unintentionally-covered-code>`.
 
 
