@@ -257,6 +257,12 @@ that a test intends to cover the given class.
 The ``CoversTrait(string $traitName)`` attribute can be used to :ref:`specify <code-coverage.targeting-units-of-code>`
 that a test intends to cover the given trait.
 
+.. admonition:: Deprecation: ``CoversTrait`` is deprecated
+
+   As of PHPUnit 11.4, the ``CoversTrait`` attribute is deprecated. It will be removed in PHPUnit 12.
+
+   The ``CoversClass`` attribute also targets traits used by the targeted class.
+
 
 .. _appendixes.attributes.CoversMethod:
 
@@ -333,6 +339,12 @@ in the context of :ref:`preventing unintentionally covered code <risky-tests.uni
 The ``UsesTrait(string $traitName)`` attribute can be used to :ref:`specify <code-coverage.targeting-units-of-code>`
 that a test allows the execution of code in the given trait, but does not intend to cover it. This is relevant
 in the context of :ref:`preventing unintentionally covered code <risky-tests.unintentionally-covered-code>`.
+
+.. admonition:: Deprecation: ``UsesTrait`` is deprecated
+
+   As of PHPUnit 11.4, the ``UsesTrait`` attribute is deprecated. It will be removed in PHPUnit 12.
+
+   The ``UsesClass`` attribute also targets traits used by the targeted class.
 
 
 .. _appendixes.attributes.UsesMethod:
