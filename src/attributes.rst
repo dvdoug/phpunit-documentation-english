@@ -243,27 +243,6 @@ The ``CoversClass(string $className)`` attribute can be used to :ref:`specify <c
 that a test intends to cover the given class.
 
 
-.. _appendixes.attributes.CoversTrait:
-
-``CoversTrait``
----------------
-
-+-------------+--------------+------------+
-| Class Level | Method Level | Repeatable |
-+=============+==============+============+
-| yes         | no           | yes        |
-+-------------+--------------+------------+
-
-The ``CoversTrait(string $traitName)`` attribute can be used to :ref:`specify <code-coverage.targeting-units-of-code>`
-that a test intends to cover the given trait.
-
-.. admonition:: Deprecation: ``CoversTrait`` is deprecated
-
-   As of PHPUnit 11.4, the ``CoversTrait`` attribute is deprecated. It will be removed in PHPUnit 12.
-
-   The ``CoversClass`` attribute also targets traits used by the targeted class.
-
-
 .. _appendixes.attributes.CoversMethod:
 
 ``CoversMethod``
@@ -323,28 +302,6 @@ that a test does not intend to contribute to code coverage.
 The ``UsesClass(string $className)`` attribute can be used to :ref:`specify <code-coverage.targeting-units-of-code>`
 that a test allows the execution of code in the given class, but does not intend to cover it. This is relevant
 in the context of :ref:`preventing unintentionally covered code <risky-tests.unintentionally-covered-code>`.
-
-
-.. _appendixes.attributes.UsesTrait:
-
-``UsesTrait``
--------------
-
-+-------------+--------------+------------+
-| Class Level | Method Level | Repeatable |
-+=============+==============+============+
-| yes         | no           | yes        |
-+-------------+--------------+------------+
-
-The ``UsesTrait(string $traitName)`` attribute can be used to :ref:`specify <code-coverage.targeting-units-of-code>`
-that a test allows the execution of code in the given trait, but does not intend to cover it. This is relevant
-in the context of :ref:`preventing unintentionally covered code <risky-tests.unintentionally-covered-code>`.
-
-.. admonition:: Deprecation: ``UsesTrait`` is deprecated
-
-   As of PHPUnit 11.4, the ``UsesTrait`` attribute is deprecated. It will be removed in PHPUnit 12.
-
-   The ``UsesClass`` attribute also targets traits used by the targeted class.
 
 
 .. _appendixes.attributes.UsesMethod:
