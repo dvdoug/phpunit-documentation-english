@@ -1240,3 +1240,20 @@ when the specified regular expression does not match the value of the ``PHP_OS``
 The ``RequiresOperatingSystemFamily(string $operatingSystemFamily)`` attribute can be used to
 :ref:`skip the execution of a test <writing-tests-for-phpunit.skipping-tests.skipping-tests-using-attributes>`
 when the specified string is not identical to the value of the ``PHP_OS_FAMILY`` constant provided by PHP.
+
+
+.. _appendixes.attributes.RequiresEnvironmentVariable:
+
+``RequiresEnvironmentVariable``
+-------------------------------
+
++-------------+--------------+------------+
+| Class Level | Method Level | Repeatable |
++=============+==============+============+
+| yes         | yes          | yes         |
++-------------+--------------+------------+
+
+The ``RequiresEnvironmentVariable(string $environmentVariableName[, string $value])`` attribute can be used to
+:ref:`skip the execution of a test <writing-tests-for-phpunit.skipping-tests.skipping-tests-using-attributes>`
+when the specified environment variable is not set. Optionally, using the the ``$value`` argument, a required
+value can be specified for the environment variable.
