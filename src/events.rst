@@ -115,6 +115,10 @@ Test
 
     A "before test" method was called for a test method
 
+``PHPUnit\Event\Test\BeforeTestMethodErrored``
+
+    A "before test" method errored for a test method
+
 ``PHPUnit\Event\Test\BeforeTestMethodFinished``
 
     All "before test" methods were called for a test method
@@ -122,6 +126,10 @@ Test
 ``PHPUnit\Event\Test\PreConditionCalled``
 
     A "precondition" method was called for a test method
+
+``PHPUnit\Event\Test\PreConditionErrored``
+
+    A "precondition" method errored for a test method
 
 ``PHPUnit\Event\Test\PreConditionFinished``
 
@@ -273,6 +281,10 @@ Test
 
     A "postcondition" method was called for a test method
 
+``PHPUnit\Event\Test\PostConditionErrored``
+
+    A "postcondition" method errored for a test method
+
 ``PHPUnit\Event\Test\PostConditionFinished``
 
     All "postcondition" methods were called for a test method
@@ -281,6 +293,10 @@ Test
 
     An "after test" method was called for a test method
 
+``PHPUnit\Event\Test\AfterTestMethodErrored``
+
+    An "after test" method errored for a test method
+
 ``PHPUnit\Event\Test\AfterTestMethodFinished``
 
     All "after test" methods were called for a test method
@@ -288,6 +304,10 @@ Test
 ``PHPUnit\Event\Test\AfterLastTestMethodCalled``
 
     An "after last test" method was called for a test case class
+
+``PHPUnit\Event\Test\AfterLastTestMethodErrored``
+
+    An "after last test" method errored for a test case class
 
 ``PHPUnit\Event\Test\AfterLastTestMethodFinished``
 
