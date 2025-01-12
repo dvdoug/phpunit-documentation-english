@@ -243,6 +243,20 @@ The ``CoversClass(string $className)`` attribute can be used to :ref:`specify <c
 that a test intends to cover the given class.
 
 
+``CoversClassesThatImplementInterface``
+---------------------------------------
+
++-------------+--------------+------------+
+| Class Level | Method Level | Repeatable |
++=============+==============+============+
+| yes         | no           | yes        |
++-------------+--------------+------------+
+
+The ``CoversClassesThatImplementInterface(string $interfaceName)`` attribute can be used to
+:ref:`specify <code-coverage.targeting-units-of-code>` that a test intends to cover
+implementations of the given interface.
+
+
 .. _appendixes.attributes.CoversMethod:
 
 ``CoversMethod``
@@ -301,6 +315,22 @@ that a test does not intend to contribute to code coverage.
 
 The ``UsesClass(string $className)`` attribute can be used to :ref:`specify <code-coverage.targeting-units-of-code>`
 that a test allows the execution of code in the given class, but does not intend to cover it. This is relevant
+in the context of :ref:`preventing unintentionally covered code <risky-tests.unintentionally-covered-code>`.
+
+
+.. _appendixes.attributes.UsesClassesThatImplementInterface:
+
+``UsesClassesThatImplementInterface``
+-------------------------------------
+
++-------------+--------------+------------+
+| Class Level | Method Level | Repeatable |
++=============+==============+============+
+| yes         | no           | yes        |
++-------------+--------------+------------+
+
+The ``UsesClassesThatImplementInterface(string $interfaceName)`` attribute can be used to :ref:`specify <code-coverage.targeting-units-of-code>`
+that a test allows the execution of code in classes that implement the given interface, but does not intend to cover it. This is relevant
 in the context of :ref:`preventing unintentionally covered code <risky-tests.unintentionally-covered-code>`.
 
 
