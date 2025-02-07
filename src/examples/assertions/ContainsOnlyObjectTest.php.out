@@ -1,11 +1,11 @@
 ./tools/phpunit tests/ContainsOnlyObjectTest.php
-PHPUnit 12.0-g4d6a8c6f1e by Sebastian Bergmann and contributors.
+PHPUnit 12.0.0 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 8.4.1
+Runtime:       PHP 8.4.3
 
 F                                                                   1 / 1 (100%)
 
-Time: 00:00, Memory: 23.21 MB
+Time: 00:00, Memory: 25.29 MB
 
 There was 1 failure:
 
