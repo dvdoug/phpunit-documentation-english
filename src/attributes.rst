@@ -1310,7 +1310,7 @@ when the specified string is not identical to the value of the ``PHP_OS_FAMILY``
 +-------------+--------------+------------+
 | Class Level | Method Level | Repeatable |
 +=============+==============+============+
-| yes         | yes          | yes         |
+| yes         | yes          | yes        |
 +-------------+--------------+------------+
 
 The ``RequiresEnvironmentVariable(string $environmentVariableName[, string $value])`` attribute can be used to
