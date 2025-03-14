@@ -98,6 +98,7 @@ The following command will fetch these formulae:
 .. code::
 
     brew tap shivammathur/php
+    brew tap shivammathur/extensions
 
 The following command will install PHP 8.2:
 
