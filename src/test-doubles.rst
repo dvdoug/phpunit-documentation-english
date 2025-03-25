@@ -289,6 +289,10 @@ just a test stub plus assertions; it is used in a fundamentally different way"
 Creating Mock Objects
 ---------------------
 
+.. admonition:: Note
+
+    Mock Objects cannot be created in a data provider method.
+
 ``createMock()``
 ^^^^^^^^^^^^^^^^
 
@@ -345,10 +349,6 @@ return values using an associative array (``['methodName' => <return value>]``):
 .. literalinclude:: examples/test-doubles/CreateConfiguredMockExampleTest.php
    :caption: Using createConfiguredMock() to create a mock object and configure return values
    :language: php
-
-.. admonition:: Note
-
-    Mock Objects cannot be created in a data provider method.
 
 
 Configuring Mock Objects
