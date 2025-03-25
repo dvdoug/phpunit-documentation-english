@@ -280,6 +280,10 @@ just a test stub plus assertions; it is used in a fundamentally different way"
 Creating Mock Objects
 ---------------------
 
+.. admonition:: Note
+
+    Mock Objects cannot be created in a data provider method.
+
 ``createMock()``
 ^^^^^^^^^^^^^^^^
 
@@ -413,10 +417,6 @@ Here is an example that shows how to stub the web service described in :file:`He
 
    Starting with PHPUnit 11, using the ``getMockFromWsdl()`` method
    will trigger a deprecation warning. The method will be removed in PHPUnit 12.
-
-.. admonition:: Note
-
-    Mock Objects cannot be created in a data provider method.
 
 
 Configuring Mock Objects
