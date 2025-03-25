@@ -163,6 +163,13 @@ be injected into a depending test.
 
     No code coverage data is collected while data provider methods are executed.
 
+.. admonition:: Note
+
+    The data sets provided by a data provider method should only contain (arrays of)
+    scalar values, immutable value objects, or Test Stubs. Services or large objects graphs
+    should not be created in a data provider method. Mock Objects cannot be created
+    in a data provider method.
+
 .. _writing-tests-for-phpunit.output:
 
 Testing Output
