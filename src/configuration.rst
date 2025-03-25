@@ -750,26 +750,6 @@ Possible values: ``true`` or ``false`` (default: ``false``, suggested: ``true``)
 Ignore deprecations (``E_DEPRECATED`` and ``E_USER_DEPRECATED``) triggered by third-party code.
 
 
-.. _appendixes.configuration.source.restrictDeprecations:
-
-The ``<restrictDeprecations>`` Attribute
-----------------------------------------
-
-Possible values: ``true`` or ``false`` (default: ``false``)
-
-Restricts the reporting of ``E_DEPRECATED`` and ``E_USER_DEPRECATED``
-`errors <https://www.php.net/manual/en/errorfunc.constants.php>`_ to the
-list of the project's source code files.
-
-.. admonition:: Deprecation: ``restrictDeprecations`` is deprecated
-
-   As of PHPUnit 11.1, the ``restrictDeprecations`` attribute is deprecated.
-   It will be removed in PHPUnit 12.
-
-   You should use the ``ignoreSelfDeprecations``, ``ignoreDirectDeprecations``, and
-   ``ignoreIndirectDeprecations`` attributes instead.
-
-
 .. _appendixes.configuration.source.restrictNotices:
 
 The ``<restrictNotices>`` Attribute
