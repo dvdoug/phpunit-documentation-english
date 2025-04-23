@@ -213,6 +213,23 @@ Possible values: ``true`` or ``false`` (default: ``false``)
 
 This attribute configures whether the test suite execution should be stopped after first incomplete test.
 
+.. _appendixes.configuration.phpunit.failOnAllIssues:
+
+The ``failOnAllIssues`` Attribute
+---------------------------------
+
+Possible values: ``true`` or ``false`` (default: ``false``)
+
+This attribute configures whether the PHPUnit test runner should exit with a shell exit code that indicates failure when an issue is triggered.
+
+.. admonition:: Backward Compatibility
+
+   Please note that if you configure ``failOnAllIssues`` to ``true``
+   then you opt in to failing on additional issues in later versions of PHPUnit
+   that will be put under the control of this setting. This is not considered
+   to be a break of backward compatibility and rather the expected behaviour
+   of this setting.
+
 .. _appendixes.configuration.phpunit.failOnEmptyTestSuite:
 
 The ``failOnEmptyTestSuite`` Attribute
@@ -460,6 +477,23 @@ The ``testdoxSummary`` Attribute
 Possible values: ``true`` or ``false`` (default: ``false``)
 
 This attribute configures whether TestDox output for non-successful tests should be repeated after the regular TestDox output.
+
+.. _appendixes.configuration.phpunit.displayDetailsOnAllIssues:
+
+The ``displayDetailsOnAllIssues`` Attribute
+-------------------------------------------
+
+Possible values: ``true`` or ``false`` (default: ``false``)
+
+This attribute configures whether details on all issues should be printed.
+
+.. admonition:: Backward Compatibility
+
+   Please note that if you configure ``displayDetailsOnAllIssues`` to ``true``
+   then you opt in to printing additional issues in later versions of PHPUnit
+   that will be put under the control of this setting. This is not considered
+   to be a break of backward compatibility and rather the expected behaviour
+   of this setting.
 
 .. _appendixes.configuration.phpunit.displayDetailsOnIncompleteTests:
 
