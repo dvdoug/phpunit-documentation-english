@@ -435,6 +435,17 @@ Details about Issues
 
     Display details for warnings triggered by tests.
 
+``--display-all-issues``
+
+    Display details for all issues.
+
+.. admonition:: Backward Compatibility
+
+   Please note that if you use ``--display-all-issues`` then you opt in to
+   printing additional issues in later versions of PHPUnit that will be put
+   under the control of this CLI option. This is not considered to be a break of
+   backward compatibility and rather the expected behaviour of this CLI option.
+
 ``--reverse-list``
 
     Print defects in reverse order.
