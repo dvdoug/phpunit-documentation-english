@@ -42,6 +42,24 @@ Errors tend to be easier to fix than failures. If you have a big list of problem
 best to tackle the errors first and see if you have any failures left when they are all
 fixed.
 
+Output
+======
+
+The default output of PHPUnit's test runner consists of up to four sections.
+
+Versions and Configuration
+--------------------------
+
+This section contains information about the PHPUnit version, PHP version, and PHPUnit's XML
+configuration file.
+
+This section can be disabled using the ``--no-output`` CLI option.
+
+Progress
+--------
+
+This section is printed to indicate progress while the tests are being run:
+
 For each test run, the PHPUnit command-line tool prints one character to
 indicate progress:
 
@@ -80,6 +98,38 @@ indicate progress:
 ``S``
 
     Printed when the test was skipped (see :ref:`writing-tests-for-phpunit.skipping-tests`)
+
+This section can be disabled using the ``--no-progress`` and ``--no-output`` CLI options.
+
+Test Results
+------------
+
+This section contains information about errors, failures, skipped tests,
+incomplete tests, and issues. By default, only information about errors and failures
+is printed.
+
+This section is only printed when there are errors, failures, or issues to report.
+It can be disabled using the ``--no-results`` and ``--no-output`` CLI options.
+
+Summary
+-------
+
+This section contains a summary of the test suite execution.
+
+- When no test errored or failed then the summary will be ``OK``
+- When a test errored then the summary will be ``ERRORED!``
+- When a test failed and no test errored then the summary will be ``FAILED!``
+- When there were no errors, failures, or issues, but a test was skipped, then the summary will be ``OK, but some tests were skipped!``
+- When there were no errors, failures, skipped tests, or issues then the summary will be ``OK, but there were issues!``
+
+.. admonition:: ``--fail-on-*``
+
+   Please note that if you use CLI options such as ``--fail-on-deprecation``, for example,
+   or their XML configuration counterparts, then this only affects the test runner's shell
+   exit code. It does not have an effect on whether or not ``OK`` will be printed in the
+   output's summary section.
+
+This section can be disabled using the ``--no-output`` CLI option.
 
 .. _textui.command-line-options:
 
