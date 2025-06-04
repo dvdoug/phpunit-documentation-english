@@ -43,12 +43,12 @@ best to tackle the errors first and see if you have any failures left when they 
 fixed.
 
 Output
-------
+======
 
 The default output of PHPUnit's test runner consists of up to four sections.
 
 Versions and Configuration
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
 
 This section contains information about the PHPUnit version, PHP version, and PHPUnit's XML
 configuration file.
@@ -56,7 +56,7 @@ configuration file.
 This section can be disabled using the ``--no-output`` CLI option.
 
 Progress
-^^^^^^^^
+--------
 
 This section is printed to indicate progress while the tests are being run:
 
@@ -102,7 +102,7 @@ indicate progress:
 This section can be disabled using the ``--no-progress`` and ``--no-output`` CLI options.
 
 Test Results
-^^^^^^^^^^^^
+------------
 
 This section contains information about errors, failures, skipped tests,
 incomplete tests, and issues. By default, only information about errors and failures
@@ -112,7 +112,7 @@ This section is only printed when there are errors, failures, or issues to repor
 It can be disabled using the ``--no-results`` and ``--no-output`` CLI options.
 
 Summary
-^^^^^^^
+-------
 
 This section contains a summary of the test suite execution.
 
