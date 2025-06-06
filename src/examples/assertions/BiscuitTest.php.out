@@ -1,7 +1,7 @@
 ./tools/phpunit tests/BiscuitTest.php
-PHPUnit 10.5.45 by Sebastian Bergmann and contributors.
+PHPUnit 10.5.46 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 8.4.3
+Runtime:       PHP 8.4.8
 
 F                                                                   1 / 1 (100%)
 
