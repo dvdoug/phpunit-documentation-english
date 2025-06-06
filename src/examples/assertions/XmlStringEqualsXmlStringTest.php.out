@@ -1,11 +1,11 @@
 ./tools/phpunit tests/XmlStringEqualsXmlStringTest.php
-PHPUnit 11.5.7 by Sebastian Bergmann and contributors.
+PHPUnit 11.5.22 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 8.4.3
+Runtime:       PHP 8.4.8
 
 F                                                                   1 / 1 (100%)
 
-Time: 00:00, Memory: 25.36 MB
+Time: 00:00, Memory: 25.38 MB
 
 There was 1 failure:
 
