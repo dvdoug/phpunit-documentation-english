@@ -1,11 +1,11 @@
 ./tools/phpunit tests/ContainsOnlyStringTest.php
-PHPUnit 12.0.2 by Sebastian Bergmann and contributors.
+PHPUnit 12.2.0 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 8.4.3
+Runtime:       PHP 8.4.8
 
 F                                                                   1 / 1 (100%)
 
-Time: 00:00, Memory: 25.29 MB
+Time: 00:00, Memory: 25.68 MB
 
 There was 1 failure:
 
