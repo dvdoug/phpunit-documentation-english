@@ -7,7 +7,7 @@ final class ExampleTest extends TestCase
     public function testExample(): void
     {
         $stub = $this->createStub(
-            InterfaceWithHookedProperty::class
+            InterfaceWithHookedProperty::class,
         );
 
         $stub

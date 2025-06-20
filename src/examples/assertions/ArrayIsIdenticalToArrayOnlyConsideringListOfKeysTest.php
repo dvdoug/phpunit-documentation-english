@@ -16,7 +16,7 @@ final class ArrayIsIdenticalToArrayOnlyConsideringListOfKeysTest extends TestCas
             ],
             [
                 'foo',
-            ]
+            ],
         );
     }
 }

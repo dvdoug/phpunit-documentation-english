@@ -16,7 +16,7 @@ final class ArrayIsIdenticalToArrayIgnoringListOfKeysTest extends TestCase
             ],
             [
                 'timestamp',
-            ]
+            ],
         );
     }
 }

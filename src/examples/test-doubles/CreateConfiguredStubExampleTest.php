@@ -10,7 +10,7 @@ final class CreateConfiguredStubExampleTest extends TestCase
             [
                 'doSomething'     => 'foo',
                 'doSomethingElse' => 'bar',
-            ]
+            ],
         );
 
         // $o->doSomething() now returns 'foo'
