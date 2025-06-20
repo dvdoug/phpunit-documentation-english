@@ -9,8 +9,8 @@
  */
 namespace example;
 
-use vendor\ThirdPartyClass;
 use PHPUnit\Framework\TestCase;
+use vendor\ThirdPartyClass;
 
 final class FirstPartyClassTest extends TestCase
 {
