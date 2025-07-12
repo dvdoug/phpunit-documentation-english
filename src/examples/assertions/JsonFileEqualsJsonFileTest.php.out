@@ -1,11 +1,11 @@
 ./tools/phpunit tests/JsonFileEqualsJsonFileTest.php
-PHPUnit 12.2.0 by Sebastian Bergmann and contributors.
+PHPUnit 12.3-gb427d6d15d by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 8.4.8
+Runtime:       PHP 8.4.10
 
 F                                                                   1 / 1 (100%)
 
-Time: 00:00, Memory: 25.68 MB
+Time: 00:00, Memory: 25.77 MB
 
 There was 1 failure:
 
