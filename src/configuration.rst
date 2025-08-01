@@ -587,20 +587,35 @@ A ``<testsuite>`` element must have a ``name`` attribute and may have one or mor
 
 .. code-block:: xml
 
-    <testsuites>
-      <testsuite name="unit">
-        <directory>tests/unit</directory>
-      </testsuite>
+    <phpunit bootstrap="vendor/autoload.php">
+      <testsuites>
+        <testsuite name="unit">
+          <directory>tests/unit</directory>
+        </testsuite>
 
-      <testsuite name="integration">
-        <directory>tests/integration</directory>
-      </testsuite>
+        <testsuite name="integration" bootstrap="tests/integration/bootstrap.php">
+          <directory>tests/integration</directory>
+        </testsuite>
+      </testsuites>
+    </phpunit>
 
-      <testsuite name="edge-to-edge">
-        <directory>tests/edge-to-edge</directory>
-        <exclude>tests/edge-to-edge/pathToIgnore</exclude>
-      </testsuite>
-    </testsuites>
+The ``bootstrap`` Attribute
+***************************
+
+Possible values: string
+
+The ``bootstrap`` attribute can be used to configure an additional bootstrap script for a test suite.
+
+With the configuration shown above:
+
+Invoking the PHPUnit test runner with ``phpunit`` loads ``vendor/autoload.php`` and ``tests/integration/bootstrap.php``.
+
+Invoking the PHPUnit test runner with ``phpunit --testsuite unit`` loads only ``vendor/autoload.php``.
+
+Invoking the PHPUnit test runner with ``phpunit --testsuite integration`` loads ``vendor/autoload.php`` and ``tests/integration/bootstrap.php``.
+
+The script configured using the ``bootstrap`` attribute on the ``<phpunit>`` element is always loaded.
+Each bootstrap script, even if configured multiple times, is only loaded once.
 
 The ``phpVersion`` and ``phpVersionOperator`` Attributes
 ********************************************************
