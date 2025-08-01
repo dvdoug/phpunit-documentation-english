@@ -582,6 +582,11 @@ A ``<testsuite>`` element must have a ``name`` attribute and may have one or mor
       </testsuite>
     </testsuites>
 
+The ``phpVersion`` and ``phpVersionOperator`` Attributes
+********************************************************
+
+Possible values: string
+
 A required PHP version can be specified using the ``phpVersion`` and ``phpVersionOperator`` attributes:
 
 .. code-block:: xml
