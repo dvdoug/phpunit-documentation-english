@@ -602,6 +602,11 @@ A ``<testsuite>`` element must have a ``name`` attribute and may have one or mor
       </testsuite>
     </testsuites>
 
+The ``phpVersion`` and ``phpVersionOperator`` Attributes
+********************************************************
+
+Possible values: string
+
 A required PHP version can be specified using the ``phpVersion`` and ``phpVersionOperator`` attributes:
 
 .. code-block:: xml
@@ -613,6 +618,11 @@ A required PHP version can be specified using the ``phpVersion`` and ``phpVersio
     </testsuites>
 
 In the example above, the tests from the ``tests/unit`` directory are only added to the test suite if the PHP version is at least 8.0.0. The ``phpVersionOperator`` attribute is optional and defaults to ``>=``.
+
+The ``groups`` Attribute
+************************
+
+Possible values: string
 
 The tests that are found using ``<directory>`` and ``<file>`` elements can be added to a comma-separated list of groups:
 
