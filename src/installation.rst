@@ -174,13 +174,16 @@ In this section we ensure that the PHP command-line interpreter is configured in
 The configuration directives shown below should be added to your PHP configuration file. Using ``php --ini`` we can ask the PHP
 command-line interpreter for the configuration file, or files, that is (are) being used.
 
-We want to see all PHP errors, warnings, notices, etc. when we run our tests. The value used with ``error_reporting``
-is a bitmask that can be used to toggle the reporting of the various types of errors supported by PHP. Setting this to ``-1``
-ensures that we always see all errors:
+We want to see all PHP errors, warnings, notices, etc. when we run our tests.
 
 .. code::
 
+    display_errors=On
+    display_startup_errors=On
     error_reporting=-1
+
+The value used with ``error_reporting`` is a bitmask that can be used to toggle the reporting of the various
+types of errors supported by PHP. Setting this to ``-1`` ensures that we always see all errors.
 
 When Xdebug is loaded, we do not want it to print its exception traces while our tests are being executed:
 
